@@ -1,0 +1,679 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="编辑器," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Atom 是一个由Github打造的开源的、先进的、易上手的、定制度高的转为程序员推出的跨平台文本编辑器，你不用修改配置文件就可以用它提供的GUI来做任何你想做的事情。它具有简洁和直观的图形用户界面，并有很多有趣的特点：支持CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。通过丰富的插件机制可以完成各种语言开发, 常用于web开发, 也可用于 ph">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Atom - 由 Github 打造的下一代编程开发利器">
+<meta property="og:url" content="https://yangzhongxun.github.io/2015/06/12/atom/index.html">
+<meta property="og:site_name" content="Alan's Blog">
+<meta property="og:description" content="Atom 是一个由Github打造的开源的、先进的、易上手的、定制度高的转为程序员推出的跨平台文本编辑器，你不用修改配置文件就可以用它提供的GUI来做任何你想做的事情。它具有简洁和直观的图形用户界面，并有很多有趣的特点：支持CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。通过丰富的插件机制可以完成各种语言开发, 常用于web开发, 也可用于 ph">
+<meta property="og:updated_time" content="2016-12-01T14:26:55.304Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Atom - 由 Github 打造的下一代编程开发利器">
+<meta name="twitter:description" content="Atom 是一个由Github打造的开源的、先进的、易上手的、定制度高的转为程序员推出的跨平台文本编辑器，你不用修改配置文件就可以用它提供的GUI来做任何你想做的事情。它具有简洁和直观的图形用户界面，并有很多有趣的特点：支持CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。通过丰富的插件机制可以完成各种语言开发, 常用于web开发, 也可用于 ph">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://yangzhongxun.github.io/2015/06/12/atom/"/>
+
+
+
+
+
+  <title> Atom - 由 Github 打造的下一代编程开发利器 | Alan's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Alan's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Unlock your potential</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://yangzhongxun.github.io/2015/06/12/atom/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Alan">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Alan's Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Alan's Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Atom - 由 Github 打造的下一代编程开发利器
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-06-12T21:15:23+08:00">
+                2015-06-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><a href="https://atom.io/" target="_blank" rel="external">Atom</a> 是一个由Github打造的开源的、先进的、易上手的、定制度高的转为程序员推出的跨平台文本编辑器，你不用修改配置文件就可以用它提供的GUI来做任何你想做的事情。它具有简洁和直观的图形用户界面，并有很多有趣的特点：支持CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。通过丰富的插件机制可以完成各种语言开发, 常用于web开发, 也可用于 php，ruby等后端开发。<br><a id="more"></a></p>
+<h3 id="Why-Atom"><a href="#Why-Atom" class="headerlink" title="Why Atom"></a>Why Atom</h3><p>除atom之外，知名的编辑器有很多，比如linux上古老的vi，vim，有notepad++，editplus，还有大名鼎鼎的sublime，除去这些编辑器不谈，还有许多重量级的IDE，像java开发中的一哥eclipse，oracle推出的netbeans，免费的hbuilder，牛X的jetbrains系列产品，既然有了这么多优秀的编辑器，那么github为什么还要推出这么一个编辑器呢，那么我现在还要介绍它呢？推荐理由如下：</p>
+<pre><code>- 免费
+- 开源
+- 可定制
+- 插件主题丰富
+- 与git结合紧密
+- github出品，必为精品
+- ...
+</code></pre><p>免费自不必多说，想想你身边有多少的盗版和破解软件吧，这次终于可以身正不怕影子斜了，哈哈。开源的好处就太多了，首先看几个人尽皆知的开源项目：linux，android system，如果没有开源，它们不一定有今天这么好，影响力这么大吧，在开源的大环境下，在github和广大开源爱好者的支持下，atom一定会越来越好。一年前就听说过atom，那时候好多人都在说atom的性能问题，一年之后的今天，在使用过程中我没感觉到有任何的卡顿，我的感觉着比sublime还要好，尤其是自带的主题，太喜欢了有没有，秒杀所有编辑器有没有。</p>
+<h3 id="Package-Recommendation"><a href="#Package-Recommendation" class="headerlink" title="Package Recommendation"></a>Package Recommendation</h3><pre><code>- advanced-open-file
+- file-icons
+- js hint
+- markdown-preview plus
+- minimap
+- terminal-plus
+- to do-show
+- emmet
+- sync-setting
+- atom-beautify
+- color-picker
+- pretty-json
+- autocomplete paths
+</code></pre><h3 id="Theme-Recommendation"><a href="#Theme-Recommendation" class="headerlink" title="Theme Recommendation"></a>Theme Recommendation</h3><pre><code>- atom-material-ui
+- atom-material-syntax
+</code></pre><h3 id="Atom-Keymap"><a href="#Atom-Keymap" class="headerlink" title="Atom Keymap"></a>Atom Keymap</h3><pre><code>- ctrl+shift+K 删除当前行
+- ctrl+shift+D 复制当前行到下一行
+- ctrl+shift+M Markdown预览
+- ctrl+space 提示补全信息
+- ctrl+cmd+up, ctrl+cmd+down 使当前行向上或者向下移动
+- ctrl+T 使光标前后字符交换
+- cmd+L 选取一行，继续按回选取下一行
+- ctrl+shift+W 选取当前单词
+- cmd+up 移动到文件开始
+- cmd+down 移动到文件结束
+- cmd+shift+up 选取至文件开始
+- cmd+shift+down 选取至文件结尾
+- cmd+r 在方法之间跳转
+- ctrl+g 移动到指定行 row:column 处
+</code></pre><p>未来atom一定会超越所有的编辑器，独领风骚。我们拭目以待！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/编辑器/" rel="tag"># 编辑器</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/05/23/markdown/" rel="next" title="Markdown基本用法">
+                <i class="fa fa-chevron-left"></i> Markdown基本用法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/01/javascript-true-false/" rel="prev" title="JavaScript：你应该知道的true和false">
+                JavaScript：你应该知道的true和false <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan" />
+          <p class="site-author-name" itemprop="name">Alan</p>
+          <p class="site-description motion-element" itemprop="description">学习总结 思考感悟 知识管理</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-Atom"><span class="nav-number">1.</span> <span class="nav-text">Why Atom</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Package-Recommendation"><span class="nav-number">2.</span> <span class="nav-text">Package Recommendation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Theme-Recommendation"><span class="nav-number">3.</span> <span class="nav-text">Theme Recommendation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Atom-Keymap"><span class="nav-number">4.</span> <span class="nav-text">Atom Keymap</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
