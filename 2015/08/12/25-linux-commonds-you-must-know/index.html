@@ -90,7 +90,7 @@
 <meta property="og:url" content="https://yangzhongxun.github.io/2015/08/12/25-linux-commonds-you-must-know/index.html">
 <meta property="og:site_name" content="Alan's Blog">
 <meta property="og:description" content="作为一个前端开发人员，其实命令行用的不是很多，况且现在越来越多的工具都有了图形化界面，就连github也给git打造了一个客户端 Github Desktop，但是在我看来，程序员还是要会一些基本的命令，这样才显得专(zhuang)业(bi)，说真的，用命令行不仅速度快，而且还能帮助我们理解程序内部运行的原理。">
-<meta property="og:updated_time" content="2016-12-21T12:43:24.390Z">
+<meta property="og:updated_time" content="2016-12-21T12:57:57.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="25个你不得不知的linux命令">
 <meta name="twitter:description" content="作为一个前端开发人员，其实命令行用的不是很多，况且现在越来越多的工具都有了图形化界面，就连github也给git打造了一个客户端 Github Desktop，但是在我看来，程序员还是要会一些基本的命令，这样才显得专(zhuang)业(bi)，说真的，用命令行不仅速度快，而且还能帮助我们理解程序内部运行的原理。">
@@ -311,73 +311,66 @@
       
 
       
-        <p>作为一个前端开发人员，其实命令行用的不是很多，况且现在越来越多的工具都有了图形化界面，就连github也给git打造了一个客户端 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a>，但是在我看来，程序员还是要会一些基本的命令，这样才显得专(zhuang)业(bi)，说真的，用命令行不仅速度快，而且还能帮助我们理解程序内部运行的原理。<br><a id="more"></a></p>
+        <p>作为一个前端开发人员，其实命令行用的不是很多，况且现在越来越多的工具都有了图形化界面，就连github也给git打造了一个客户端 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a>，但是在我看来，程序员还是要会一些基本的命令，这样才显得专(zhuang)业(bi)，说真的，用命令行不仅速度快，而且还能帮助我们理解程序内部运行的原理。</p>
+<a id="more"></a>
 <h3 id="Linux常用命令："><a href="#Linux常用命令：" class="headerlink" title="Linux常用命令："></a>Linux常用命令：</h3><hr>
 <ol>
-<li>ls (windows下为<code>dir</code>)<br>ls命令是列出目录内容(List Directory Contents)的意思。</li>
+<li><code>ls</code> (windows下为<code>dir</code>)<br>ls命令是列出目录内容(List Directory Contents)的意思。</li>
 </ol>
 <ul>
 <li><code>ls-l</code> 以详情模式(long listing fashion)列出文件夹的内容。</li>
 <li><code>ls-a</code> 列出所有文件，包括隐藏文件。</li>
 </ul>
 <ol>
-<li>cd<br>cd命令是切换目录(Change Directory)</li>
-</ol>
-<p>cd <path></path> 切换到指定目录<br>cd .. 切换到上一级目录<br>cd / 切换到根目录</p>
-<ol>
-<li><p>pwd<br>pwd命令是打印工作目录(Print Working Directory)。<br>直接在当前目录下输入<code>pwd</code>即可。</p>
+<li><p><code>cd</code><br>cd命令是切换目录(Change Directory)<br>cd <path></path> 切换到指定目录<br>cd .. 切换到上一级目录<br>cd / 切换到根目录</p>
 </li>
-<li><p>history<br>显示输入的历史记录</p>
+<li><p><code>pwd</code><br>pwd命令是打印工作目录(Print Working Directory)。<br>直接在当前目录下输入<code>pwd</code>即可。</p>
 </li>
-<li><p>mkdir<br>Make Directory，在当前目录下新建目录，如果存在，则提示已存在，不能再次创建。</p>
+<li><p><code>history</code><br>显示输入的历史记录</p>
 </li>
-<li><p>touch<br>可以将文件的访问和修改时间更新为当前时间。如果文件不存在，会创建文件，如果文件存在，<br>则只会更新时间戳，不会改变文件内容。<br>使用：<code>touch &lt;filename&gt;</code></p>
+<li><p><code>mkdir</code><br>Make Directory，在当前目录下新建目录，如果存在，则提示已存在，不能再次创建。</p>
 </li>
-<li><p>chmod<br>chmode(change mode)命令，改变文件的模式位，即改变文件的权限，比如读，写，执行等权限。</p>
+<li><p><code>touch</code><br>可以将文件的访问和修改时间更新为当前时间。如果文件不存在，会创建文件，如果文件存在，<br>则只会更新时间戳，不会改变文件内容。<br>使用：<code>touch &lt;filename&gt;</code></p>
 </li>
-</ol>
-<p>Read(r) = 4<br>Write(w) = 2<br>Execute(x) = 1</p>
-<p>给文件只读权限，就设置为’4’，只写权限，就设置为’2’，只执行权限，设置为’1’，读写权限就是4 + 2 = 6，以此类推。</p>
-<p>下面设置3种用户和用户组权限，第一个是拥有者，然后是用户所在的组，最后是其它用户。<br>chmod 777 abc.sh</p>
-<ol>
-<li><p>tar<br>tar命令是磁盘归档。对创建一些文档的归档和它们的解压很有用。</p>
+<li><p><code>chmod</code><br>chmode(change mode)命令，改变文件的模式位，即改变文件的权限，比如读，写，执行等权限。<br>读，写，执行：<code>Read(r) = 4</code> ; <code>Write(w) = 2</code> ; <code>Execute(x) = 1</code><br>给文件只读权限，就设置为’4’，只写权限，就设置为’2’，只执行权限，设置为’1’，读写权限就是4 + 2 = 6，以此类推。<br>下面设置3种用户和用户组权限，第一个是拥有者，然后是用户所在的组，最后是其它用户。<br>命令使用方法：<code>chmod 777 abc.sh</code></p>
 </li>
-<li><p>date<br>时间，日期</p>
+<li><p><code>tar</code><br>tar命令是磁盘归档。对创建一些文档的归档和它们的解压很有用。</p>
 </li>
-<li><p>cat<br>“cat”代表了联结，连接两个或更多文本文件或者以标准输出形式打印文件的内容。</p>
+<li><p><code>date</code><br>时间，日期</p>
 </li>
-<li><p>cp<br>cp，即”copy”，把一个文件移动到一个目录里面。<br><code>cp a.txt /Users/vince/Downloads</code></p>
+<li><p><code>cat</code><br>“cat”代表了联结，连接两个或更多文本文件或者以标准输出形式打印文件的内容。</p>
 </li>
-<li><p>mv<br>mv，即”move”，移动文件到一个目录里面。<br><code>mv a.txt &lt;path&gt;</code></p>
+<li><p><code>cp</code><br>cp，即”copy”，把一个文件移动到一个目录里面。<br><code>cp a.txt /Users/vince/Downloads</code></p>
 </li>
-<li><p>rm - Remove<br>删除给定的文件或文件夹</p>
+<li><p><code>mv</code><br>mv，即”move”，移动文件到一个目录里面。<br><code>mv a.txt &lt;path&gt;</code></p>
 </li>
-<li><p>rmdir - Remove Directory<br>rmdir 删除指定的目录</p>
+<li><p><code>rm</code> - Remove<br>删除给定的文件或文件夹</p>
 </li>
-<li><p>tail - print TAIL<br>tail，默认显示指定文件的最后10行，还可用<code>tail - n</code>来指定显示的行数（从末尾算起）。</p>
+<li><p><code>rmdir</code> - Remove Directory<br>rmdir 删除指定的目录</p>
 </li>
-<li><p>help<br>help会在终端列出所有可用的命令。</p>
+<li><p><code>tail</code> - print TAIL<br>tail，默认显示指定文件的最后10行，还可用<code>tail - n</code>来指定显示的行数（从末尾算起）。</p>
 </li>
-<li><p>whatis - What is this command<br><code>whatis</code> 用来查询指定命令的含义。</p>
+<li><p><code>help</code><br>help会在终端列出所有可用的命令。</p>
 </li>
-<li><p>exit<br>用于结束当前的终端通话</p>
+<li><p><code>whatis</code> - What is this command<br>whatis 用来查询指定命令的含义。</p>
 </li>
-<li><p>ping<br><code>ping</code> 命令通过发送数据包ping远程主机来检测网络连接和服务器状态。</p>
+<li><p><code>exit</code><br>用于结束当前的终端通话</p>
 </li>
-<li><p>shutdown<br><code>shutdown</code> 用于关闭计算机，而<code>shutdown -r</code> 用于重启计算机。</p>
+<li><p><code>ping</code><br>ping 命令通过发送数据包ping远程主机来检测网络连接和服务器状态。</p>
 </li>
-<li><p>who - Who is Logged in<br><code>who</code>命令是列出当前登陆的用户名。</p>
+<li><p><code>shutdown</code><br>shutdown 用于关闭计算机，而<code>shutdown -r</code> 用于重启计算机。</p>
 </li>
-<li><p>su - Switch User<br>su用于切换不同的用户。</p>
+<li><p><code>who</code> - Who is Logged in<br>who 命令是列出当前登陆的用户名。</p>
 </li>
-<li><p>uname<br>用于显示系统的重要信息，使用<code>uname -a</code>可以用来查看所有信息。</p>
+<li><p><code>su</code> - Switch User<br>su用于切换不同的用户。</p>
 </li>
-<li><p>free - Free memory<br><code>free</code>用来查看系统的空闲内存、已占用内存、可利用的交换内存等信息，<code>free -m</code>可以将单位转换为KB，而<code>free -g</code>则转换为GB。</p>
+<li><p><code>uname</code><br>用于显示系统的重要信息，使用<code>uname -a</code>可以用来查看所有信息。</p>
 </li>
-<li><p>df - Disk space Free</p>
+<li><p><code>free</code> - Free memory<br>free用来查看系统的空闲内存、已占用内存、可利用的交换内存等信息，<code>free -m</code>可以将单位转换为KB，而<code>free -g</code>则转换为GB。</p>
+</li>
+<li><p><code>df</code> - Disk space Free<br><code>df</code> 命令用来查看硬盘的使用情况。’df -h’可以将结果以 <code>G</code> 为单位显示。</p>
 </li>
 </ol>
-<p><code>df</code> 命令用来查看硬盘的使用情况。’df -h’可以将结果以 <code>G</code> 为单位显示。</p>
 
       
     </div>
