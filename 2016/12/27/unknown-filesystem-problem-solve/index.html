@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：12error: unknown filesystem.grub rescue&amp;gt;
-当时就有一种不好的预感，但是第一反应是关机重启，重启之后发现还是不行，还有滴滴滴的响声，不甘心，继续重启，如此反复了几次，终于发现今天的问题不是重启能够解决的。">
+<meta name="description" content="和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：123error: unknown filesystem.Entering rescue mode...grub rescue&amp;gt;
+当时就有一种不好的预感，但是第一反应是关机重启，重启之后发现还是不行，还有滴滴滴的响声，不甘心，继续重启，如此反复了几次，终于发现今天的问题不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="开机显示unknown filesystem错误完美解决">
 <meta property="og:url" content="https://yangzhongxun.github.io/2016/12/27/unknown-filesystem-problem-solve/index.html">
 <meta property="og:site_name" content="Alan's Blog">
-<meta property="og:description" content="和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：12error: unknown filesystem.grub rescue&amp;gt;
-当时就有一种不好的预感，但是第一反应是关机重启，重启之后发现还是不行，还有滴滴滴的响声，不甘心，继续重启，如此反复了几次，终于发现今天的问题不是重启能够解决的。">
-<meta property="og:updated_time" content="2016-12-27T02:15:39.922Z">
+<meta property="og:description" content="和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：123error: unknown filesystem.Entering rescue mode...grub rescue&amp;gt;
+当时就有一种不好的预感，但是第一反应是关机重启，重启之后发现还是不行，还有滴滴滴的响声，不甘心，继续重启，如此反复了几次，终于发现今天的问题不">
+<meta property="og:updated_time" content="2016-12-27T02:18:41.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开机显示unknown filesystem错误完美解决">
-<meta name="twitter:description" content="和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：12error: unknown filesystem.grub rescue&amp;gt;
-当时就有一种不好的预感，但是第一反应是关机重启，重启之后发现还是不行，还有滴滴滴的响声，不甘心，继续重启，如此反复了几次，终于发现今天的问题不是重启能够解决的。">
+<meta name="twitter:description" content="和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：123error: unknown filesystem.Entering rescue mode...grub rescue&amp;gt;
+当时就有一种不好的预感，但是第一反应是关机重启，重启之后发现还是不行，还有滴滴滴的响声，不甘心，继续重启，如此反复了几次，终于发现今天的问题不">
 
 
 
@@ -332,7 +332,7 @@
       
 
       
-        <p>和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">error: unknown filesystem.</div><div class="line">grub rescue&gt;</div></pre></td></tr></table></figure></p>
+        <p>和往常一样，早上起来第一件事情就是打开电脑，但是打开之后没有看到熟悉的开机界面，映入眼帘的是一个黑窗口，上面显示一个错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">error: unknown filesystem.</div><div class="line">Entering rescue mode...</div><div class="line">grub rescue&gt;</div></pre></td></tr></table></figure></p>
 <p>当时就有一种不好的预感，但是第一反应是关机重启，重启之后发现还是不行，还有滴滴滴的响声，不甘心，继续重启，如此反复了几次，终于发现今天的问题不是重启能够解决的。<br><a id="more"></a><br>于是拿出手机，打开 <code>Google</code> 搜索关键字 <code>unknown filesystem</code>，一看好多类似的问题，不过大多是英文的，大概看了一下，出问题的主要是安装双系统的，比如 <code>Windows+Ubuntu</code> 或者 <code>Mac + Ubuntu</code>的，我的就是Windows+Ubuntu双系统，突然想起来昨天动了Ubuntu所在的磁盘。本来我的电脑上有C、D、E、F、G五个磁盘，之前折腾 <code>Linux</code> 把G盘分出去50G安装了一个 <code>Ubuntu 16.04 LTS</code>，昨天看着磁盘太多很不爽，于是就把G盘剩余的80G和F盘合并了，又因为安装Linux之后，Linux会成为默认开机项，这才引发了重启之后找不到盘符无法开机的问题。</p>
 <p>解决方法很简单，只需要三步：</p>
 <ol>
